@@ -12,3 +12,4 @@ C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net
 C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.pdb
 C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.genruntimeconfig.cache
 C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\ref\parallel.dll
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.sourcelink.json

@@ -12,3 +12,4 @@ C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\n
 C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.pdb
 C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.genruntimeconfig.cache
 C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\ref\sequential.dll
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.sourcelink.json

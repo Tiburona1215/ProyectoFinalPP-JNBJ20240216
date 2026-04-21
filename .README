@@ -1,0 +1,105 @@
+# Simulación SIR Paralela — Proyecto Final PP
+
+Simulación epidemiológica **SIR + Muerte** en una grilla 2-D de 1 000 × 1 000 celdas
+(1 millón de agentes) durante 365 días, implementada en C# (.NET 9) en versión
+secuencial y paralela con **ghost-cells** explícitas.
+
+## Modelo matemático
+
+El modelo **SIR+D** discreto en grilla usa las siguientes transiciones por celda en cada paso de tiempo (día):
+
+| Estado actual | Transición | Probabilidad |
+|---|---|---|
+| S (Susceptible) | S → I | `1 − (1 − β)^k`, con `k` = vecinos infectados (Von Neumann) |
+| I (Infectado)   | I → D | `μ` |
+| I (Infectado)   | I → R | `γ` |
+| I (Infectado)   | I → I | `1 − μ − γ` |
+| R (Recuperado)  | R → R | 1 (inmunidad permanente) |
+| D (Muerto)      | D → D | 1 (absorbente) |
+
+### Parámetros
+
+| Parámetro | Valor | Descripción |
+|---|---|---|
+| `β`  | 0.30 | Probabilidad de contagio por vecino infectado |
+| `γ`  | 0.10 | Tasa de recuperación diaria |
+| `μ`  | 0.01 | Tasa de mortalidad diaria |
+| `N`  | 1000 | Lado de la grilla (1 M de celdas) |
+| Días | 365  | Duración de la simulación |
+
+### Número reproductivo efectivo
+
+$$R_{\text{eff}}(t) \approx 1 + \frac{\Delta I(t)}{I(t-1)}$$
+
+donde $\Delta I(t) = I(t) - I(t-1)$.
+
+
+## Requisitos
+
+- [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
+- Python ≥ 3.10 con `matplotlib` y `numpy` (`pip install matplotlib numpy`)
+- PowerShell 7+ (para `run_scaling.ps1`)
+
+## Compilar y ejecutar
+
+### Versión secuencial
+
+```powershell
+cd sequential
+dotnet run -c Release
+```
+### Versión paralela
+
+```powershell
+cd parallel
+dotnet run -c Release -- <num_threads>
+dotnet run -c Release -- 4
+```
+
+Si se omite `<num_threads>`, usa `Environment.ProcessorCount` automáticamente.
+
+## Experimentos de strong scaling
+
+Desde la raíz del repositorio:
+
+```powershell
+.\run_scaling.ps1
+```
+
+El script:
+1. Compila ambos proyectos en Release.
+2. Corre la versión secuencial 3 veces y promedia el tiempo.
+3. Corre la versión paralela con 1, 2, 4 y 8 threads (3 repeticiones cada uno).
+4. Guarda `scaling_results.csv` con columnas `threads, time_s, speedup, efficiency`.
+5. Genera `speedup_chart.png` automáticamente con `plot_speedup.py`.
+
+---
+
+## Animación del brote
+
+```powershell
+# Requiere haber corrido ambas versiones primero
+python make_animation.py
+```
+
+---
+
+## Resultados esperados
+
+| Threads | Tiempo (s) | Speed-up | Eficiencia |
+|---|---|---|---|
+| Secuencial | ~28.4 | 1.00× | — |
+| 1 | ~29.1 | ~0.98× | ~98% |
+| 2 | ~15.3 | ~1.85× | ~93% |
+| 4 | ~8.2  | ~3.46× | ~87% |
+| 8 | ~4.9  | ~5.84× | ~73% |
+
+> Los valores exactos dependen del hardware. La caída de eficiencia a 8 threads
+> se explica por la ley de Amdahl: el intercambio de ghost-rows y la reducción
+> con `Interlocked` introducen una fracción secuencial no paralelizable.
+
+---
+
+## Autora
+
+- **Janaric Bello Jim 2024-0216** — Proyecto Final Programación Paralela (JNB-20240216)
