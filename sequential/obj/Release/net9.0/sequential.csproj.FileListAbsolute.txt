@@ -1,0 +1,14 @@
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\bin\Release\net9.0\sequential.exe
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\bin\Release\net9.0\sequential.deps.json
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\bin\Release\net9.0\sequential.runtimeconfig.json
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\bin\Release\net9.0\sequential.dll
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\bin\Release\net9.0\sequential.pdb
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.AssemblyInfoInputs.cache
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.AssemblyInfo.cs
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.csproj.CoreCompileInputs.cache
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.dll
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\refint\sequential.dll
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.pdb
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\sequential.genruntimeconfig.cache
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\sequential\obj\Release\net9.0\ref\sequential.dll

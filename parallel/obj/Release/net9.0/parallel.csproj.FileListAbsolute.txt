@@ -1,0 +1,14 @@
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\bin\Release\net9.0\parallel.exe
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\bin\Release\net9.0\parallel.deps.json
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\bin\Release\net9.0\parallel.runtimeconfig.json
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\bin\Release\net9.0\parallel.dll
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\bin\Release\net9.0\parallel.pdb
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.AssemblyInfoInputs.cache
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.AssemblyInfo.cs
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.csproj.CoreCompileInputs.cache
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.dll
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\refint\parallel.dll
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.pdb
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\parallel.genruntimeconfig.cache
+C:\Users\nicol\source\repos\ProyectoFinalPP-JNB20240216\parallel\obj\Release\net9.0\ref\parallel.dll
